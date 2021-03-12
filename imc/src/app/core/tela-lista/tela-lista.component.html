@@ -1,0 +1,25 @@
+<div class="container center">
+  <div class="title">Lista de IMCs realizados</div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">CPF</th>
+        <th scope="col">Altura</th>
+        <th scope="col">Peso</th>
+        <th scope="col">IMC</th>
+        <th scope="col">Classificação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of IMCs">
+        <td>{{i.nome}}</td>
+        <td>{{i.cpf}}</td>
+        <td>{{i.altura}}</td>
+        <td>{{i.peso}}</td>
+        <td>{{i.imc}}</td>
+        <td>{{i.descricao}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

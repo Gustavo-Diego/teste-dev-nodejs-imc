@@ -1,0 +1,33 @@
+<div class="container center">
+  <form class="search" [formGroup]="credentials" >
+    <div class="form-group row">
+      <label for="Busca" class="col-sm-2 col-form-label">Busca por CPF</label>
+      <div class="col-sm-10">
+        <input formControlName="cpf" type="text" class="form-control" id="Busca" placeholder="CPF" mask="000.000.000-00">
+      </div>
+    </div>
+    <button (click)="busca()" class="btn pesquisa">Pesquisar</button>
+  </form>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">CPF</th>
+        <th scope="col">Altura</th>
+        <th scope="col">Peso</th>
+        <th scope="col">IMC</th>
+        <th scope="col">Classificação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of imc" >
+        <td>{{i.nome}}</td>
+        <td>{{i.cpf}}</td>
+        <td>{{i.altura}}</td>
+        <td>{{i.peso}}</td>
+        <td>{{i.imc}}</td>
+        <td>{{i.descricao}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
