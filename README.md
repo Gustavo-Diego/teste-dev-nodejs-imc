@@ -9,4 +9,6 @@ const db = pgp({
 	database: 'IMC'
 });
 
+No banco de dados eu criei uma tabela com PK outo incremente
+
 ../teste-dev-nodejs-imc/imc para subir a aplicação angular, com o servidor funcionando só testar. 
