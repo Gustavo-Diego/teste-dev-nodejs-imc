@@ -11,4 +11,8 @@ const db = pgp({
 
 No banco de dados eu criei uma tabela com PK outo incremente
 
+node ou nodemon server para rodar o backend, porta 4040
+
 ../teste-dev-nodejs-imc/imc para subir a aplicação angular, com o servidor funcionando só testar. 
+
+ng serve para rodar o frontend, porta 4200
